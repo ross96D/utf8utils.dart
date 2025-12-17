@@ -91,7 +91,7 @@ class _LineSplitterChunkedConversionSink implements Sink<Uint8List> {
   }
 }
 
-class Utf8RuneIterator extends Converter<Uint8List, List<Uint8List>> {
+class Utf8RuneSplitter extends Converter<Uint8List, List<Uint8List>> {
   @override
   List<Uint8List> convert(Uint8List input) {
     final response = <Uint8List>[];
